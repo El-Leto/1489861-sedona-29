@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елизавета Якубенко](https://up.htmlacademy.ru/htmlcss/29/user/1489861).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 

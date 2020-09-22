@@ -5,6 +5,7 @@
   --white-transparent: rgba(255, 255, 255, 0.3);
 
   --grey-text: #333333;
+  --grey-rating: #666666;
   --grey-shadow: rgba(0, 1, 1, 0.2);
 
   --blue: #81B3D2;
@@ -17,9 +18,11 @@
 
 /*font*/
   --main-font: "PT Sans", Arial, sans-serif;
+  --fs-extra-min: 12px;
   --fs-min: 14px;
   --fs-normal: 21px;
   --fs-max: 30px;
+  --lh-extra-min: 18px;
   --lh-min: 21px;
   --lh-normal: 24px;
   --lh-max: 26px;
@@ -164,6 +167,72 @@
   color: var(--white-transparent);
 }
 
+/*hotels-page*/
+
+.total {
+  font-size: var(--fs-normal);
+  line-height: var(--lh-max);
+  font-weight: var(--fw-bold);
+}
+
+.sort {
+  font-size: var(--fs-extra-min);
+  line-height: var(--lh-extra-min);
+  font-weight: var(--fw-normal);
+  list-style: none;
+}
+
+.sort-item {
+  text-decoration: none;
+}
+
+.sort-item.active {
+  color: var(--blue);
+}
+
+.sort-item.passive {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.result-hotels{
+  list-style: none;
+}
+
+.result-hotels-link {
+  font-size: var(--fs-normal);
+  line-height: var(--lh-max);
+  font-weight: var(--fw-bold);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.result-hotels-text {
+  font-size: var(--fs-min);
+  line-height: var(--lh-min);
+  font-weight: var(--fw-normal);
+  color: var(--grey-text);
+}
+
+.more-button {
+  font-size: var(--fs-min);
+  line-height: var(--lh-min);
+  background-color: var(--blue);
+}
+
+.booking-button {
+  font-size: var(--fs-min);
+  line-height: var(--lh-min);
+  background-color: var(--brown);
+}
+
+.rating {
+  font-size: var(--fs-min);
+  line-height: var(--lh-min);
+  font-weight: var(--fw-normal);
+  color: var(--grey-rating);
+  background-color: var(--grey);
+}
 
 /*footer*/
 

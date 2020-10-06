@@ -15,6 +15,8 @@
   --brown-dark: #604E43;
   --brown-darken: #503E33;
 
+  --wrapper-width: 1200px;
+
 
 /*font*/
   --main-font: "PT Sans", Arial, sans-serif;
@@ -47,8 +49,8 @@
 .page-wrapper {
   min-height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: 1200px;
+  grid-template-rows: min-content 1fr min-content;
+  width: var(--wrapper-width);
   margin: 0 auto;
   background-color: var(--white);
   box-shadow: 0px 5px 15px var(--grey-shadow);
@@ -61,17 +63,14 @@
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: auto 138px auto;
-  margin-left: 73px;
-  margin-right: 73px;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
   font-size: var(--fs-min);
   line-height: var(--lh-max);
   font-weight: var(--fw-bold);
 }
 
-.main-navigation-item {
+.main-navigation-link {
   color: var(--black);
   text-decoration: none;
 }
@@ -89,31 +88,38 @@
   color: var(--brown);
 }
 
+.main-navigation-item {
+  flex-grow: 1;
+  min-width: 226px;
+}
+
 .site-navigation {
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  width: 458px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-header-logo {
   order: 1;
-  justify-self: center;
   margin: 0;
   padding: 0;
+  height: 56px;
 }
 
 .navigation-left {
-  grid-template-columns: 50% 50%;
-  justify-items: start;
+  margin-left: 73px;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  text-align: left;
 }
 
 .navigation-right {
   order: 2;
-  grid-template-columns: 50% 50%;
-  justify-items: end;
+  margin-right: 73px;
   align-items: center;
+  text-align: right;
 }
 
 /*main index*/
@@ -149,15 +155,29 @@
 
 .feature-item {
   background-color: var(--grey);
+  height: 256px;
 }
 
 .wide-item {
   background-color: var(--blue);
   color: var(--white);
+  display: flex;
 }
 
 .wide-item .item-text {
   color: var(--white);
+}
+
+.feature-text {
+
+}
+
+.feature-image {
+
+}
+
+.right-item {
+  flex-direction: row-reverse;
 }
 
 .item-title {
@@ -181,6 +201,9 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 330px;
+  justify-items: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -328,7 +351,7 @@
   background-color: var(--white);
   opacity: 0.9;
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   margin: 0;

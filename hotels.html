@@ -14,15 +14,15 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="http://placehold.it/66x55" width="66" height="55" alt="Логотип города Седона">
+          <img src="http://placehold.it/66x56" width="66" height="56" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation navigation-left">
-          <li><a class="main-navigation-item" href="">Информация</a></li>
-          <li><a class="main-navigation-item" href="">Фото и видео</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="">Информация</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="">Фото и видео</a></li>
         </ul>
         <ul class="site-navigation navigation-right">
-          <li><a class="main-navigation-item" href="">Карта штата</a></li>
-          <li><a class="main-navigation-item active">Гостиницы</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="">Карта штата</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -34,57 +34,71 @@
         <!-- Здесь будет форма фильтра -->
       </section>
       <section class="results">
-        <p class="total">Найдено: 3</p>
-        <h3 class="sort-title">Сортировка</h3>
-        <ul class="sort">
-          <li>
-            <a class="sort-item active">По цене</a>
-          </li>
-          <li>
-            <a class="sort-item passive" href="">По типу</a>
-          </li>
-          <li>
-            <a class="sort-item passive" href="">По рейтингу</a>
-          </li>
-        </ul>
+        <div class="results-text">
+          <p class="total">Найдено: 3</p>
+          <h3 class="sort-title">Сортировка</h3>
+          <ul class="sort">
+            <li>
+              <a class="sort-item active">По цене</a>
+            </li>
+            <li>
+              <a class="sort-item passive" href="">По типу</a>
+            </li>
+            <li>
+              <a class="sort-item passive" href="">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
         <!-- Здесь будут декоративные стрелочки -->
         <div class="icon-dir"></div>
       </section>
-      <section>
+      <section class="hotels-item">
         <h2>Список гостиниц</h2>
         <ul class="result-hotels">
           <li class="result-hotels-item">
-            <a class="result-hotels-link" href="">
-              <img src="img/hotels/amara.jpg" width="135" height="90" alt="Фото Amara resort & SPA">
-              <h3>Amara resort & SPA</h3>
-            </a>
-            <p class="result-hotels-text">Гостиница</p>
-            <p class="result-hotels-text">от 4000 р.</p>
-            <a class="button more-button" href="">Подробнее</a>
-            <a class="button booking-button" href="">Забронировать</a>
-            <p class="rating">Рейтинг: 8,5</p>
+            <div class="hotel-legend">
+              <a class="result-hotels-link-photo" href="">
+                <img src="img/hotels/amara.jpg" width="135" height="90" alt="Фото Amara resort & SPA">
+              </a>
+              <a class="result-hotels-link-name" href=""><h3 class="hotel-title">Amara resort & SPA</h3></a>
+              <p class="result-hotels-text">Гостиница</p>
+              <p class="result-hotels-text">от 4000 р.</p>
+              <a class="button more-button" href="">Подробнее</a>
+              <a class="button booking-button" href="">Забронировать</a>
+            </div>
+            <div class="rating">
+              <p class="rating-text">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="result-hotels-item">
-            <a class="result-hotels-link" href="">
-              <img src="img/hotels/desert.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
-              <h3>Desert Quail Inn</h3>
-            </a>
-            <p class="result-hotels-text">Мотель</p>
-            <p class="result-hotels-text">от 3000 р.</p>
-            <a class="button more-button" href="">Подробнее</a>
-            <a class="button booking-button" href="">Забронировать</a>
-            <p class="rating">Рейтинг: 8,9</p>
+            <div class="hotel-legend">
+              <a class="result-hotels-link-photo" href="">
+                <img src="img/hotels/desert.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
+              </a>
+              <a class="result-hotels-link-name" href=""><h3 class="hotel-title">Desert Quail Inn</h3></a>
+              <p class="result-hotels-text">Мотель</p>
+              <p class="result-hotels-text">от 3000 р.</p>
+              <a class="button more-button" href="">Подробнее</a>
+              <a class="button booking-button" href="">Забронировать</a>
+            </div>
+            <div class="rating">
+              <p class="rating">Рейтинг: 8,9</p>
+            </div>
           </li>
           <li class="result-hotels-item">
-            <a class="result-hotels-link" href="">
-              <img src="img/hotels/villas.jpg" width="135" height="90" alt="Фото Villas at Poco Diablo">
-              <h3>Villas at Poco Diablo</h3>
-            </a>
-            <p class="result-hotels-text">Апартаменты</p>
-            <p class="result-hotels-text">от 2000 р.</p>
-            <a class="button more-button" href="">Подробнее</a>
-            <a class="button booking-button" href="">Забронировать</a>
-            <p class="rating">Рейтинг: 9,2</p>
+            <div class="hotel-legend">
+              <a class="result-hotels-link-photo" href="">
+                <img src="img/hotels/villas.jpg" width="135" height="90" alt="Фото Villas at Poco Diablo">
+              </a>
+              <a class="result-hotels-link-name" href=""><h3 class="hotel-title">Villas at Poco Diablo</h3></a>
+              <p class="result-hotels-text">Апартаменты</p>
+              <p class="result-hotels-text">от 2000 р.</p>
+              <a class="button more-button" href="">Подробнее</a>
+              <a class="button booking-button" href="">Забронировать</a>
+            </div>
+            <div class="rating">
+              <p class="rating">Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
       </section>

@@ -69,7 +69,7 @@
   line-height: var(--lh-max);
   font-weight: var(--fw-bold);
   padding-left: 73px;
-  padding-right: 73px
+  padding-right: 73px;
 }
 
 .main-navigation-link {
@@ -241,10 +241,14 @@
 /*hotels-page*/
 
 .results {
-  display: grid;
-  grid-template-columns: auto auto auto 1fr;
-  margin-left: 73px;
-  margin-right: 73px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
+.results-text {
+  display: flex;
 }
 
 .total {
@@ -268,7 +272,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, auto);
   align-self: center;
 }
 
@@ -290,26 +294,50 @@
   align-self: center;
 }
 
+.hotels-item {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
 .result-hotels{
   list-style: none;
-  margin-left: 73px;
-  margin-right: 73px;
   padding: 0;
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: repeat(3, auto);
 }
 
 .result-hotels-item {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.result-hotels-link {
+.hotel-legend {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(3, min-content);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.result-hotels-link-photo {
+  grid-row: 1/4;
+  margin-right: 29px;
+  line-height: 0;
+}
+
+.result-hotels-link-name {
   font-size: var(--fs-normal);
   line-height: var(--lh-max);
   font-weight: var(--fw-bold);
   color: var(--black);
   text-decoration: none;
+  grid-column: 2/4;
+}
+
+.hotel-title {
+  margin: 0;
 }
 
 .result-hotels-text {
@@ -317,26 +345,31 @@
   line-height: var(--lh-min);
   font-weight: var(--fw-normal);
   color: var(--grey-text);
+  margin: 0;
 }
 
 .more-button {
   font-size: var(--fs-min);
   line-height: var(--lh-min);
   background-color: var(--blue);
+  margin-right: 6px;
+  padding: 3px 16px 3px 17px;
 }
 
 .booking-button {
   font-size: var(--fs-min);
   line-height: var(--lh-min);
   background-color: var(--brown);
+  padding: 3px 17px 3px 16px;
 }
 
-.rating {
+.rating-text {
   font-size: var(--fs-min);
   line-height: var(--lh-min);
   font-weight: var(--fw-normal);
   color: var(--grey-rating);
   background-color: var(--grey);
+  padding: 3px 12px 3px 15px;
 }
 
 /*footer*/

@@ -7,6 +7,7 @@
 
   --grey-text: #333333;
   --grey-rating: #666666;
+  --grey-logo: #BDBBBC;
   --grey-shadow: rgba(0, 1, 1, 0.2);
 
   --blue: #81B3D2;
@@ -604,25 +605,23 @@ ol.features-list {
   font-size: var(--fs-min);
   line-height: var(--lh-max);
   padding-right: 73px;
+  padding-top: 34px;
   text-align: center;
 }
 
-.logo-htmlacademy{
-  display: block;
-  margin-top: 5px;
-  padding-right: 123px;
+.htmlacademy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo-htmlacademy::before {
-  display: block;
-  content: "";
-  position: relative;
-  left: 146px;
-  top: 32px;
-  width: 115px;
-  height: 41px;
-  background-image: url("../img/svg-icon/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: auto;
+.logo-htmlacademy {
+  margin-left: 9px;
 }
+
+.logo-htmlacademy:hover {
+  fill: var(--blue);
+}
+
+.logo-htmlacademy:active {
+  fill: var(--grey-logo);

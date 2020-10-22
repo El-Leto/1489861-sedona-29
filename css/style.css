@@ -374,6 +374,7 @@ ol.features-list {
   color: var(--white);
   font-weight: var(--fw-bold);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .search-button {
@@ -464,10 +465,12 @@ ol.features-list {
 .results-sort-button {
   border: none;
   background-color: var(--white);
+  cursor: pointer;
+  padding: 0;
 }
 
 .results-sort-button:last-child {
-  padding-right: 0;
+  margin-left: 12px;
 }
 
 .result-hotels{
@@ -495,14 +498,16 @@ ol.features-list {
   align-items: center;
   grid-template-columns: repeat(3, min-content);
   grid-template-rows: repeat(3, min-content);
-  margin-top: 30px;
+  margin-top: 24px;
   margin-bottom: 30px;
+
 }
 
 .result-hotels-link-photo {
   grid-row: 1/4;
   margin-right: 29px;
   line-height: 0;
+  margin-top: 7px;
 }
 
 .result-hotels-link-name {
@@ -517,7 +522,6 @@ ol.features-list {
   color: var(--black);
   margin: 0;
   margin-bottom: 7px;
-  margin-top: -6px;
 }
 
 .result-hotels-text {
@@ -575,7 +579,7 @@ ol.features-list {
   background-image: url("../img/background/background.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: auto;
+  background-size: cover;
 }
 
 .hotels-filter-form {
@@ -688,21 +692,11 @@ ol.features-list {
 
 .price-controls {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   margin-bottom: 19px;
-  border: 2px solid var(--white-transparent);
-  padding: 6px 5px 6px 7px;
-  width: 96%;
-}
-
-.max-price {
-  padding-left: 18px;
-}
-
-.price-input {
-  margin-left: 10px;
-  margin-right: 10px;
+  border: 2px solid var(--white);
+  width: 100%;
 }
 
 .price-controls-input {
@@ -710,19 +704,21 @@ ol.features-list {
   border: none;
   background-color: var(--white-transparent-max);
   color: var(--white);
-  padding: 0;
   text-transform: uppercase;
   width: 100%;
+  padding-top: 7px;
+  padding-bottom: 10px;
 }
 
 .price-controls-input::placeholder {
+  color: var(--white);
   opacity: 1;
 }
 
 .price-controls::after {
   content: "";
   position: relative;
-  left: -149px;
+  left: -155px;
   border: 1px solid var(--white);
 }
 
@@ -746,24 +742,26 @@ ol.features-list {
 .toggle {
   display: block;
   position: absolute;
-  top: -8px;
+  top: -9px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 19px;
+  height: 19px;
   padding: 0;
-  border: 7px solid var(--white);
+  border: 8px solid var(--white);
   background-color: var(--grey-toggle);
   border-radius: 50%;
-  box-shadow: 0 2px 1px var(--grey-toggle);
+  box-shadow: 0 2px 0 var(--grey-toggle);
 }
 
 .toggle-max {
-  left: 253px;
+  left: 252px;
 }
 
-.toogle:hover {
+.toggle:hover {
   transform: scale(1.2);
+  transition: 0.2s background-color, 0.2s color;
 }
+
 
 .filter-button {
   background-color: var(--white-transparent-max);
@@ -773,6 +771,7 @@ ol.features-list {
   border: 2px solid var(--white);
   margin-left: -11px;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 .filter-button:hover {

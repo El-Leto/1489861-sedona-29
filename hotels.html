@@ -22,7 +22,7 @@
         </ul>
         <ul class="site-navigation navigation-right">
           <li class="main-navigation-item"><a class="main-navigation-link" href="">Карта штата</a></li>
-          <li class="main-navigation-item"><a class="main-navigation-link" href="hotels.html">Гостиницы</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link active">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -73,11 +73,11 @@
               <legend class="legend-cost">Стоимость в сутки (р):</legend>
               <div class="range-filter">
                 <div class="price-controls">
-                  <label class="min-price price-input">
+                  <label class="min-price">
                       <input class="price-controls-input" type="text" name="min-price" placeholder
   ="от 0">
                   </label>
-                  <label class="max-price price-input">
+                  <label class="max-price">
                       <input class="price-controls-input" type="text" name="max-price" placeholder
   ="до 3000">
                   </label>
@@ -86,8 +86,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <button class="toggle toggle-min button" tabindex="0" type="button"></button>
+                  <button class="toggle toggle-max button" tabindex="0" type="button"></button>
                 </div>
               </div>
             </fieldset>

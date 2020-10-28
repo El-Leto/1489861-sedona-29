@@ -490,7 +490,8 @@ ol.features-list {
 
 .search-hotel-form-input:focus {
   background-color: var(--white);
-  border: 2px solid var(--grey-border);
+  outline: 2px solid var(--grey-border);
+  outline-offset: -2px;
 }
 
 .search-hotel-form-input::placeholder {
@@ -551,6 +552,11 @@ ol.features-list {
   padding: 6px 12px;
   text-transform: uppercase;
   width: 15px;
+}
+
+.input-age::placeholder {
+  color: var(--black);
+  opacity: 1;
 }
 
 .minus {

@@ -93,6 +93,8 @@
         <p class="search-title">Заинтересовались?</p>
         <p class="search-text">Укажите предполагаемые даты поздки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button button" href="hotels.html">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="search-hotels-modal">
         <div class="modal-search">
           <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-hotel-form-item">
@@ -110,26 +112,33 @@
               </div>
             </div>
             <div class="flex-age-div">
-              <label class="flex-age-label" for="adult">Взрослые:</label>
-              <div class="flex-age">
-                <button class="minus button" type="button"><svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="minus-svg" fill="#A9A9A9" d="M0 0h12v3H0z"/></svg></button><input class="search-hotel-form-input input-age" id="adult" type="text" name="adult" placeholder="2"><button class="plus button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="plus-svg"fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-              </svg></button>
+              <div class="flex-age-box">
+                <label class="flex-age-label-adult" for="adult">Взрослые:</label>
+                <div class="flex-age">
+                  <button class="minus button" type="button"><svg class="minus-svg" width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#A9A9A9" d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="adult" type="text" name="adult" placeholder="2"><button class="plus button" type="button"><svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                </svg></button>
+                </div>
               </div>
-              <label class="flex-age-label flex-age-label-child" for="child">Дети:</label>
-              <div class="flex-age">
-                <button class="minus button" type="button"><svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="minus-svg" fill="#A9A9A9" d="M0 0h12v3H0z"/></svg></button><input class="search-hotel-form-input input-age" id="child" type="text" name="child" placeholder="0"><button class="plus button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="plus-svg" fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-              </svg></button>
+              <div class="flex-age-box">
+                <label class="flex-age-label flex-age-label-child" for="child">Дети:</label>
+                <div class="flex-age">
+                  <button class="minus button" type="button"><svg class="minus-svg" width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#A9A9A9" d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="child" type="text" name="child" placeholder="0"><button class="plus button" type="button"><svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                </svg></button>
+                </div>
               </div>
             </div>
-            <button class="find-button button" type="submit">Найти</button>
+            <div><button class="find-button button" type="submit">Найти</button></div>
           </form>
         </div>
       </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта города Седона</h2>
+      </section>
     </main>
-    <footer class="page-footer map">
-      <div class="main-footer footer-index">
+    <footer class="page-footer">
+      <div class="main-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="footer-contacts-text">#visitsedona</p>

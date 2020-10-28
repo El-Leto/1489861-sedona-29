@@ -516,6 +516,7 @@ ol.features-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 
@@ -525,14 +526,17 @@ ol.features-list {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  box-sizing: border-box;
 }
 
 .flex-age-label-adult {
-  margin-right: 40px;
+  margin-right: 42px;
+  flex-grow: 1;
 }
 
 .flex-age-label-child {
   margin-right: 27px;
+  flex-grow: 1;
 }
 
 .input-age {
@@ -546,7 +550,7 @@ ol.features-list {
   height: 26px;
   padding: 6px 12px;
   text-transform: uppercase;
-  width: 18px;
+  width: 15px;
 }
 
 .minus {

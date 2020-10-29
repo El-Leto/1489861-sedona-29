@@ -5,6 +5,7 @@
   --white-transparent: rgba(255, 255, 255, 0.3);
   --white-transparent-min: rgba(255, 255, 255, 0.9);
   --white-transparent-max: rgba(255, 255, 255, 0);
+  --black-transparent: rgba(0, 0, 0, 0.3);
 
   --grey-text: #333333;
   --grey-rating: #666666;
@@ -14,6 +15,7 @@
   --grey-input: #EBEBEB;
   --grey-toggle: #ABABAB;
   --grey-svg: #A9A9A9;
+  --grey-svg-dir: #CACACA;
 
   --blue: #81B3D2;
   --blue-dark: #669EC0;
@@ -583,10 +585,6 @@ ol.features-list {
   color: var(--blue);
 }
 
-.calendar-svg path {
-  fill: currentColor;
-}
-
 .minus {
   color: var(--grey-svg);
   padding: 0 13px;
@@ -605,20 +603,12 @@ ol.features-list {
   color: var(--blue);
 }
 
-.minus-svg path {
-  fill: currentColor;
-}
-
 .plus:hover {
   color: var(--black);
 }
 
 .plus:active {
   color: var(--blue);
-}
-
-.plus-svg path {
-  fill: currentColor;
 }
 
 .map {
@@ -663,9 +653,6 @@ ol.features-list {
 }
 
 .sort {
-  font-size: var(--fs-extra-min);
-  line-height: var(--lh-extra-min);
-  font-weight: var(--fw-normal);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -676,17 +663,33 @@ ol.features-list {
 }
 
 .sort-item {
-  text-decoration: none;
+  border: none;
+  font-size: var(--fs-extra-min);
+  line-height: var(--lh-extra-min);
+  font-weight: var(--fw-normal);
+  text-transform: uppercase;
+  background: none;
+  padding: 0;
+  color: var(--black);
+  opacity: 0.3;
+  border-bottom: var(--blue) dashed 1px;
 }
 
 .sort-item.active {
   color: var(--blue);
+  opacity: 1;
+  border: none;
 }
 
-.sort-item.passive {
+.sort-item:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+
+.sort-item:active {
   color: var(--black);
-  opacity: 0.3;
-  border-bottom: var(--blue) dotted 1px;
+  opacity: 1;
+  border: none;
 }
 
 .icon-dir {
@@ -700,10 +703,23 @@ ol.features-list {
   background-color: var(--white);
   cursor: pointer;
   padding: 0;
+  color: var(--grey-svg-dir);
 }
 
 .results-sort-button:last-child {
   margin-left: 12px;
+}
+
+.results-sort-button.active {
+  color: var(--blue);
+}
+
+.results-sort-button:hover {
+  color: var(--black);
+}
+
+.results-sort-button:active {
+  color: var(--blue);
 }
 
 .result-hotels{
@@ -757,6 +773,14 @@ ol.features-list {
   margin-bottom: 7px;
 }
 
+.hotel-title:hover {
+  color: var(--blue);
+}
+
+.hotel-title:active {
+  color: var(--black-transparent);
+}
+
 .result-hotels-text {
   font-size: var(--fs-min);
   line-height: var(--lh-min);
@@ -774,11 +798,29 @@ ol.features-list {
   padding: 3px 16px 3px 17px;
 }
 
+.more-button:hover {
+  background-color: var(--blue-dark);
+}
+
+.more-button:active {
+  background-color: var(--blue-darken);
+  color: var(--white-transparent);
+}
+
 .booking-button {
   font-size: var(--fs-min);
   line-height: var(--lh-min);
   background-color: var(--brown);
   padding: 3px 17px 3px 16px;
+}
+
+.booking-button:hover {
+  background-color: var(--brown-dark);
+}
+
+.booking-button:active {
+  background-color: var(--brown-darken);
+  color: var(--white-transparent);
 }
 
 .rating {
@@ -1109,12 +1151,13 @@ ol.features-list {
 
 .logo-htmlacademy {
   margin-left: 9px;
+  color: var(--black);
 }
 
 .logo-htmlacademy:hover {
-  fill: var(--blue);
+  color: var(--blue);
 }
 
 .logo-htmlacademy:active {
-  fill: var(--grey-logo);
+  color: var(--grey-logo);
 }

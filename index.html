@@ -92,37 +92,38 @@
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="search-title">Заинтересовались?</p>
         <p class="search-text">Укажите предполагаемые даты поздки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-button button" href="hotels.html">Поиск гостиницы в Седоне</a>
+        <a class="search-button button" href="hotels.html" aria-label="Открыть форму бронирования гостиницы">Поиск гостиницы в Седоне</a>
       </section>
       <section class="search-hotels-modal">
+        <h2 class="visually-hidden">Форма бронирования гостиницы в Седоне</h2>
         <div class="modal-search">
           <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-hotel-form-item">
-              <label class="search-hotel-form-item-label" for="check in">Дата заезда:</label>
+              <label class="search-hotel-form-item-label" for="arrival">Дата заезда:</label>
               <div class="search-hotel-form-item-wrapper">
-                <input class="search-hotel-form-input" id="check in" type="text" name="check in" placeholder="24 апреля 2017">
-                <button class="calendar button" type="button"><svg width="21" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
+                <input class="search-hotel-form-input" id="arrival" type="text" name="check in" placeholder="24 апреля 2017">
+                <button class="calendar button" type="button" aria-label="Открыть календарь"><svg width="21" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
               </div>
             </div>
             <div class="search-hotel-form-item">
-              <label class="search-hotel-form-item-label" for="check out">Дата выезда:</label>
+              <label class="search-hotel-form-item-label" for="leaving">Дата выезда:</label>
               <div class="search-hotel-form-item-wrapper">
-                <input class="search-hotel-form-input" id="check out" type="text" name="check out" placeholder="4 июля 2017">
-                <button class="calendar button" type="button"><svg width="21" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
+                <input class="search-hotel-form-input" id="leaving" type="text" name="check out" placeholder="4 июля 2017">
+                <button class="calendar button" type="button" aria-label="Открыть календарь"><svg width="21" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
               </div>
             </div>
             <div class="flex-age-div">
               <div class="flex-age-box">
                 <div class="flex-label"><label class="flex-age-label-adult" for="adult">Взрослые:</label></div>
                 <div class="flex-age">
-                  <button class="minus button" type="button"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="adult" type="text" name="adult" placeholder="2"><button class="plus button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <button class="minus button" type="button" aria-label="Уменьшить на одного взрослого"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="adult" type="text" name="adult" placeholder="2"><button class="plus button" type="button" aria-label="Увеличить на одного взрослого"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/></svg></button>
                 </div>
               </div>
               <div class="flex-age-box">
                 <div class="flex-label"><label class="flex-age-label flex-age-label-child" for="child">Дети:</label></div>
                 <div class="flex-age">
-                  <button class="minus button" type="button"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="child" type="text" name="child" placeholder="0"><button class="plus button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <button class="minus button" type="button" aria-label="Уменьшить на одного взрослого"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="child" type="text" name="child" placeholder="0"><button class="plus button" type="button" aria-label="Увеличить на одного взрослого"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/></svg></button>
                 </div>
               </div>
@@ -133,6 +134,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта города Седона</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d352145.5373730167!2d-111.3616357691286!3d34.91468726558899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604124988804!5m2!1sru!2sru" width="1200" height="594" style="border:0;" allowfullscreen="" title="США штат Аризона" aria-hidden="false" tabindex="-1"></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -148,19 +150,19 @@
             <li class="social-item">
               <a class="social-button button" href="#">
                 <span class="visually-hidden">Twitter</span>
-                <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="rgba(255, 255, 255, 0.9)"/></svg>
+                <svg aria-hidden="true" focusable="false" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="rgba(255, 255, 255, 0.9)"/></svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-button button" href="#">
                 <span class="visually-hidden">Facebook</span>
-                <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="rgba(255, 255, 255, 0.9)"/></svg>
+                <svg aria-hidden="true" focusable="false" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="rgba(255, 255, 255, 0.9)"/></svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-button button" href="#">
                 <span class="visually-hidden">YouTube</span>
-                <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3.03 4v8L15 8 6.03 4z" fill="rgba(255, 255, 255, 0.9)"/></svg>
+                <svg aria-hidden="true" focusable="false" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3.03 4v8L15 8 6.03 4z" fill="rgba(255, 255, 255, 0.9)"/></svg>
               </a>
             </li>
           </ul>
@@ -176,7 +178,6 @@
       </div>
     </footer>
   </div>
-
 </body>
 
 </html>

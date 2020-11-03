@@ -159,6 +159,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  background-color: var(--blue);
   height: 509px;
 }
 
@@ -202,9 +203,6 @@
   grid-template-rows: auto auto auto;
   margin: 0;
   padding: 0;
-}
-
-ol.features-list {
   counter-reset: section;
   list-style: none;
 }
@@ -358,10 +356,11 @@ ol.features-list {
 }
 
 .search-hotels {
+  position: relative;
   text-align: center;
-
   margin-left: 316px;
   margin-right: 316px;
+  z-index: 100;
 }
 
 .search-title {
@@ -429,9 +428,71 @@ ol.features-list {
 }
 
 .search-hotels-modal {
-  display: flex;
   justify-content: center;
   align-items: flex-start;
+  display: flex;
+}
+
+@keyframes stretching {
+  0% {
+    opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+    opacity: 1;
+    transform: translateY(0);
+	}
+}
+
+@keyframes closing {
+  0% {
+    opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+    opacity: 0;
+		transform: translateY(-100%);
+	}
+}
+
+.modal-show {
+  animation-name: stretching;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.modal-close {
+  animation-name: closing;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-8px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(8px);
+  }
+}
+
+.modal-shake {
+  animation-name: shake;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 .modal-search {
@@ -442,7 +503,7 @@ ol.features-list {
   margin: 0 auto;
   background-color: var(--white);
   width: 568px;
-  z-index: 1
+  z-index: 2;
 }
 
 .search-hotel-form {
@@ -512,7 +573,7 @@ ol.features-list {
   background-color: var(--grey);
 }
 
-.flex-age-div {
+.search-hotel-form-age {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -521,14 +582,14 @@ ol.features-list {
   box-sizing: border-box;
 }
 
-.flex-age-box {
+.search-hotel-form-age-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 }
 
-.flex-age {
+.search-hotel-form-age-item-input {
   width: 114px;
   height: 38px;
   display: flex;
@@ -537,12 +598,12 @@ ol.features-list {
   box-sizing: border-box;
 }
 
-.flex-age-label-adult {
+.search-hotel-form-age-item-label-adult {
   margin-right: 42px;
   flex-grow: 1;
 }
 
-.flex-age-label-child {
+.search-hotel-form-age-item-label-child {
   margin-right: 27px;
   flex-grow: 1;
 }
@@ -770,7 +831,6 @@ ol.features-list {
   grid-template-rows: repeat(3, min-content);
   margin-top: 24px;
   margin-bottom: 30px;
-
 }
 
 .result-hotels-link-photo {
@@ -884,6 +944,7 @@ ol.features-list {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  background-color: var(--blue-darken);
 }
 
 .hotels-filter-form {
@@ -916,7 +977,7 @@ ol.features-list {
 .section-checkbox {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .check-fieldset {

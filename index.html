@@ -27,7 +27,6 @@
       </nav>
     </header>
     <main class="container">
-      <!-- Добавила селектор для главной картинки -->
       <section class="image-slide">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <img class="photo-text" src="img/background/welcome.svg" width="457" height="351" alt="Седона лучше Гранд-Каньона">
@@ -96,34 +95,34 @@
       </section>
       <section class="search-hotels-modal">
         <h2 class="visually-hidden">Форма бронирования гостиницы в Седоне</h2>
-        <div class="modal-search">
+        <div class="modal-search modal-show">
           <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-hotel-form-item">
               <label class="search-hotel-form-item-label" for="arrival">Дата заезда:</label>
               <div class="search-hotel-form-item-wrapper">
-                <input class="search-hotel-form-input" id="arrival" type="text" name="check in" placeholder="24 апреля 2017">
+                <input class="search-hotel-form-input arrival" id="arrival" type="text" name="check in" placeholder="24 апреля 2017">
                 <button class="calendar button" type="button" aria-label="Открыть календарь"><svg width="21" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
               </div>
             </div>
             <div class="search-hotel-form-item">
               <label class="search-hotel-form-item-label" for="leaving">Дата выезда:</label>
               <div class="search-hotel-form-item-wrapper">
-                <input class="search-hotel-form-input" id="leaving" type="text" name="check out" placeholder="4 июля 2017">
+                <input class="search-hotel-form-input leaving" id="leaving" type="text" name="check out" placeholder="4 июля 2017">
                 <button class="calendar button" type="button" aria-label="Открыть календарь"><svg width="21" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
               </div>
             </div>
-            <div class="flex-age-div">
-              <div class="flex-age-box">
-                <div class="flex-label"><label class="flex-age-label-adult" for="adult">Взрослые:</label></div>
-                <div class="flex-age">
-                  <button class="minus button" type="button" aria-label="Уменьшить на одного взрослого"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="adult" type="text" name="adult" placeholder="2"><button class="plus button" type="button" aria-label="Увеличить на одного взрослого"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <div class="search-hotel-form-age">
+              <div class="search-hotel-form-age-item">
+                <div class="search-hotel-form-age-item-label"><label class="search-hotel-form-age-item-label-adult" for="adult">Взрослые:</label></div>
+                <div class="search-hotel-form-age-item-input">
+                  <button class="minus button" type="button" aria-label="Уменьшить на одного взрослого"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age adult" id="adult" type="text" name="adult" placeholder="2"><button class="plus button" type="button" aria-label="Увеличить на одного взрослого"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/></svg></button>
                 </div>
               </div>
-              <div class="flex-age-box">
-                <div class="flex-label"><label class="flex-age-label flex-age-label-child" for="child">Дети:</label></div>
-                <div class="flex-age">
-                  <button class="minus button" type="button" aria-label="Уменьшить на одного взрослого"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age" id="child" type="text" name="child" placeholder="0"><button class="plus button" type="button" aria-label="Увеличить на одного взрослого"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <div class="search-hotel-form-age-item">
+                <div class="search-hotel-form-age-item-label"><label class="search-hotel-form-age-item-label-child" for="child">Дети:</label></div>
+                <div class="search-hotel-form-age-item-input">
+                  <button class="minus button" type="button" aria-label="Уменьшить на одного ребёнка"><svg width="12" height="3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h12v3H0z"/></svg></button><input class="input-age child" id="child" type="text" name="child" placeholder="0"><button class="plus button" type="button" aria-label="Увеличить на одного ребёнка"><svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/></svg></button>
                 </div>
               </div>
@@ -178,6 +177,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -197,6 +197,11 @@
   text-align: center;
 }
 
+.features {
+  position: relative;
+  z-index: 100;
+}
+
 .features-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -360,14 +365,16 @@
   text-align: center;
   margin-left: 316px;
   margin-right: 316px;
+  padding-top: 57px;
   z-index: 100;
+  background-color: var(--white);
 }
 
 .search-title {
   font-size: var(--fs-max);
   line-height: var(--lh-normal);
   font-weight: var(--fw-bold);
-  margin-top: 57px;
+  margin-top: 0;
   margin-bottom: 33px;
 }
 
@@ -431,6 +438,8 @@
   justify-content: center;
   align-items: flex-start;
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes stretching {
@@ -960,6 +969,7 @@
   margin-top: 26px;
   margin-left: 0;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .legend {

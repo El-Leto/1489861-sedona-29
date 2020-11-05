@@ -1083,6 +1083,14 @@
   width: 100%;
 }
 
+.min-price {
+  flex-grow: 1;
+}
+
+.max-price {
+  flex-grow: 1;
+}
+
 .price-controls-input {
   text-align: center;
   border: none;

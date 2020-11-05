@@ -515,6 +515,10 @@
   z-index: 2;
 }
 
+.modal-block {
+  visibility: hidden;
+}
+
 .search-hotel-form {
   font-size: var(--fs-min);
   line-height: var(--lh-max);

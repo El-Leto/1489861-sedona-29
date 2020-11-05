@@ -6,6 +6,18 @@ const leaving = searchForm.querySelector(".leaving");
 const adult = searchForm.querySelector(".adult");
 const child = searchForm.querySelector(".child");
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    modalForm.classList.add("modal-block");
+  });
+
+  openForm.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if (modalForm.classList.contains("modal-block")) {
+      modalForm.classList.remove("modal-block");
+    }
+  });
+
 openForm.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (modalForm.classList.contains("modal-show")) {

@@ -8,14 +8,14 @@ const child = searchForm.querySelector(".child");
 
 openForm.addEventListener("click", function(evt) {
   evt.preventDefault();
-  if (modalForm.classList.contains("modal-close")) {
-    modalForm.classList.remove("modal-close");
+  if (modalForm.classList.contains("modal-show")) {
+    modalForm.classList.remove("modal-show");
     modalForm.classList.remove("modal-shake");
-    modalForm.classList.add("modal-show");
+    modalForm.classList.add("modal-close");
     arrival.focus();
   } else {
-    modalForm.classList.remove("modal-show");
-    modalForm.classList.add("modal-close");
+    modalForm.classList.remove("modal-close");
+    modalForm.classList.add("modal-show");
     modalForm.classList.remove("modal-shake");
   }
 });

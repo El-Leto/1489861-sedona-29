@@ -553,7 +553,7 @@
   background-color: var(--grey);
   font-size: var(--fs-min);
   line-height: var(--lh-max);
-  font-weight: var(--bold);
+  font-weight: var(--fw-bold);
   color: var(--black);
   padding: 6px 12px;
   text-transform: uppercase;
@@ -623,7 +623,7 @@
   background-color: var(--grey);
   font-size: var(--fs-min);
   line-height: var(--lh-max);
-  font-weight: var(--bold);
+  font-weight: var(--fw-bold);
   color: var(--black);
   height: 26px;
   padding: 6px 0;
